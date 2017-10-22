@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+try:
+    # Have to use setuptools to build wheels
+    from setuptools import setup
+except ImporError:
+    from distutils.core import setup
 import os.path
 import sys
 
@@ -14,7 +18,7 @@ VERSION = open(version_file).read().strip().split('.')
 release = '.'.join(VERSION)
 
 setup(name='Twiggy',
-      version=release,
+      version='0.1.3',
       description='a Pythonic logger',
       author='Pete Fein',
       author_email='pete@wearpants.org',
