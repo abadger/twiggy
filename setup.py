@@ -14,7 +14,7 @@ VERSION = open(version_file).read().strip().split('.')
 release = '.'.join(VERSION)
 
 setup(name='Twiggy',
-      version='0.1.1',
+      version='0.1.2',
       description='a Pythonic logger',
       author='Pete Fein',
       author_email='pete@wearpants.org',
