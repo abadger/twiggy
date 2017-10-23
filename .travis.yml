@@ -23,7 +23,7 @@ matrix:
   - python: 2.7
     env: TOXENV=py2flake8
 install:
-- travis_retry pip install tox wheel
+- travis_retry pip install tox
 script:
 - tox
 deploy:
